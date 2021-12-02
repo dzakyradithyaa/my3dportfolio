@@ -1,0 +1,101 @@
+/* 3D Effect */
+#effect .effect-box {
+  position: relative;
+  background-color: #f4623a;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+#effect .effect-box::before {
+  content: 'MY';
+  position: absolute;
+  color: #fff;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-55%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#effect .effect-box:hover::before {
+  opacity: 0.2;
+}
+
+#effect .effect-box::after {
+  content: 'CHARACTER';
+  position: absolute;
+  color: #fff;
+  font-size: 3.4em;
+  font-weight: bold;
+  font-style: italic;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 350px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#effect .effect-box:hover::after {
+  opacity: 0.3;
+}
+
+#effect .effect-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+#effect .effect-box:hover .effect-name {
+  top: 20px;
+  opacity: 1;
+}
+
+#effect .effect-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#effect .effect-box:hover .effect-detail-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+#effect .effect-img-girls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 80px);
+  max-width: 195px;
+  transition: 0.5s;
+}
+
+#effect .effect-box:hover .effect-img-girls {
+  transform: translate3d(-50%, -50%, 100px) scale(1.1);
+}
+
+#effect .effect-img-astronaut {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 80px);
+  max-width: 300px;
+  transition: 0.5s;
+}
+
+#effect .effect-box:hover .effect-img-astronaut {
+  transform: translate3d(-50%, -50%, 100px) scale(1.2);
+}
