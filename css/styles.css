@@ -7025,6 +7025,11 @@ fieldset:disabled .btn {
 
 .d-block {
   display: block !important;
+  text-decoration: none;
+}
+
+.d-block:hover {
+  text-decoration: underline;
 }
 
 .d-grid {
@@ -11796,4 +11801,12 @@ header.masthead .h1 {
 #gallery .container-xl .gallery-box:hover .gallery-box-caption,
 #gallery .container-xxl .gallery-box:hover .gallery-box-caption {
   opacity: 1;
+}
+
+#contact .medsos {
+  text-decoration: none;
+}
+
+#contact .medsos:hover {
+  text-decoration: underline;
 }
