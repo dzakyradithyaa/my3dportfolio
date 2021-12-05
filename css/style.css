@@ -1,9 +1,19 @@
 /* 3D Effect */
+#effect {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#effect h2 {
+  color: #f38852;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
 #effect .effect-box {
   position: relative;
-  background-color: #f4623a;
+  background-color: transparent;
   border-radius: 10px;
-  height: 500px;
+  height: 450px;
   transform-style: preserve-3d;
 }
 
@@ -19,10 +29,12 @@
   transform: translate(-55%, 0);
   opacity: 0;
   transition: 0.5s;
+  border-radius: 10px;
 }
 
 #effect .effect-box:hover::before {
   opacity: 0.2;
+  border-radius: 10px;
 }
 
 #effect .effect-box::after {
@@ -37,10 +49,12 @@
   top: 350px;
   opacity: 0;
   transition: 0.5s;
+  border-radius: 10px;
 }
 
 #effect .effect-box:hover::after {
   opacity: 0.3;
+  border-radius: 10px;
 }
 
 #effect .effect-name {
@@ -76,10 +90,10 @@
 
 #effect .effect-img-girls {
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 50%;
   transform: translate3d(-50%, -50%, 80px);
-  max-width: 195px;
+  max-width: 190px;
   transition: 0.5s;
 }
 
@@ -98,4 +112,43 @@
 
 #effect .effect-box:hover .effect-img-astronaut {
   transform: translate3d(-50%, -50%, 100px) scale(1.2);
+}
+
+#about {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#about h2 {
+  color: #f38852;
+  font-weight: 600;
+  margin-bottom: 1px;
+}
+
+.about-p {
+  color: #fff;
+  font-family: 'ubuntu';
+  font-size: 1.1rem;
+}
+
+#gallery h2 {
+  color: #e46762;
+  font-weight: 600;
+  margin-bottom: 1px;
+}
+
+#contact {
+  background-color: #d9d9d9;
+}
+
+#contact h2 {
+  color: #e46762;
+  font-weight: 600;
+}
+
+#contact p {
+  font-family: 'ubuntu';
+}
+
+.medsos {
+  font-family: 'ubuntu';
 }
